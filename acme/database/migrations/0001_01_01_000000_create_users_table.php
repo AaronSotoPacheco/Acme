@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('puesto');
             $table->date('fecha_creaccion');              
             $table->integer('nivel'); 
             $table->timestamp('email_verified_at')->nullable();
