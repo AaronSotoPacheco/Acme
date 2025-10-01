@@ -17,6 +17,7 @@ class planos_seed extends Seeder
         
            DB::table('planos')->insert([
             'hoja_id' => 1,
+            'zona_id'=>1,
             'nombre_plano'=>'plano1',
             'localizacion'=>'NCG',
             'fecha_actualizacion'=>date('Y-m-d'),
@@ -26,6 +27,7 @@ class planos_seed extends Seeder
         ]);
          DB::table('planos')->insert([
             'hoja_id' => 2,
+            'zona_id'=>1,
             'nombre_plano'=>'plano1',
             'localizacion'=>'NCG',
             'fecha_actualizacion'=>date('Y-m-d'),

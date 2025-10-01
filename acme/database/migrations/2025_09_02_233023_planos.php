@@ -15,6 +15,7 @@ return new class extends Migration
         Schema::create('planos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('hoja_id')->constrained('hojas');
+            $table->foreignId('zona_id')->constrained('zonas');
             $table->string('nombre_plano');
             $table->string('localizacion');
             $table->date('fecha_actualizacion');            

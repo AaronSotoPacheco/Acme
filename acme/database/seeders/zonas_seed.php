@@ -18,13 +18,11 @@ class zonas_seed extends Seeder
     {
            DB::table('zonas')->insert([
             'nombre_zona'=>'poniente',
-            'plano_id'=>1,
             'created_at'=>date('Y-m-d h:m:s')
 
         ]);
          DB::table('zonas')->insert([
             'nombre_zona'=>'poniente',
-            'plano_id'=>1,
             'created_at'=>date('Y-m-d h:m:s')
 
         ]);

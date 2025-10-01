@@ -18,7 +18,6 @@ class user_seed extends Seeder
             DB::table('users')->insert([
             'name' => 'Aaron Soto' .$i,
             'email' => 'test'.$i.'@example.com',
-            'fecha_creaccion'=>date('Y-m-d'),
             'nivel'=>1,
             'password'=>Hash::make('123'),
             'created_at'=>date('Y-m-d h:m:s')

@@ -15,7 +15,6 @@ return new class extends Migration
         Schema::create('zonas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre_zona');
-            $table->foreignId('plano_id')->constrained('planos');
             $table->rememberToken();
             $table->timestamps();
          
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+         Schema::dropIfExists('zonas');
     }
 };
