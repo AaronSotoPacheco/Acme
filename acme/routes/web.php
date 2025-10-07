@@ -15,3 +15,9 @@ Route::group(['prefix'=>'dashboard'],function(){
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
+Auth::routes();
+// routes/web.php
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

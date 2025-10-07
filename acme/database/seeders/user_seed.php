@@ -28,7 +28,6 @@ for($i =11;$i<20;$i++){
  DB::table('users')->insert([
             'name' => 'Sebastian Chacon' .$i,
             'email' => 'test'.$i.'@example.com',
-            'fecha_creaccion'=>date('Y-m-d'),
             'nivel'=>2,
             'password'=>Hash::make('123'),
             'created_at'=>date('Y-m-d h:m:s')
